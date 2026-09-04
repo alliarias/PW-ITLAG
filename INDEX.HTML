@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instituto Técnico León Ángel Gómez</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts (opcional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- ===== MENÚ DE NAVEGACIÓN ===== -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <!-- Escudo representado con el lema -->
+        <div class="shield">
+          <span class="shield-line">EN</span>
+          <span class="shield-line">EL</span>
+          <span class="shield-line">SER</span>
+          <span class="shield-line">Y</span>
+          <span class="shield-line">AMOR</span>
+          <span class="shield-line">EN</span>
+          <span class="shield-line">EL</span>
+          <span class="shield-line">QU</span>
+          <span class="shield-line">ACER</span>
+        </div>
+        <span class="instituto-nombre">ITLAG</span>
+      </div>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#inicio" class="active">INICIO</a>
+        <a href="#instituto">INSTITUTO</a>
+        <a href="#tecnicas">TECNICAS</a>
+        <a href="#cuestionario">DESCUBRE TUS INTERESES</a>
+        <a href="#mejoramiento">PLAN DE MEJORAMIENTO</a>
+        <a href="#contacto">CONTACTO</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== CONTENIDO PRINCIPAL ===== -->
+  <main>
+    <!-- SECCIÓN INICIO (Portada) -->
+    <section id="inicio" class="section hero">
+      <div class="hero-content">
+        <h1 class="hero-title">INSTITUTO TÉCNICO LEÓN ÁNGEL GÓMEZ</h1>
+        <h2 class="hero-subtitle">CONOCE, ELIGE Y APRENDE</h2>
+        <p class="hero-text">
+          Bienvenidos al Instituto Técnico León Ángel Gómez. Conoce nuestras técnicas,
+          explora diferentes áreas de formación y descubre cuáles se relacionan con tus intereses.
+        </p>
+        <a href="#tecnicas" class="btn btn-primary btn-large">EXPLORAR TECNICAS</a>
+      </div>
+      <div class="hero-image">
+        <!-- Imagen decorativa relacionada con educación técnica -->
+        <img src="https://placehold.co/600x400/ea580c/ffffff?text=Formación+Técnica" alt="Formación técnica" />
+      </div>
+    </section>
+
+    <!-- SECCIÓN INSTITUTO -->
+    <section id="instituto" class="section">
+      <div class="container">
+        <h2 class="section-title">CONOCE EL INSTITUTO</h2>
+        <div class="instituto-content">
+          <p>
+            El proyecto busca reunir en un solo espacio digital información sobre las diferentes técnicas
+            ofrecidas por el Instituto Técnico León Ángel Gómez. De esta manera, los estudiantes y personas
+            interesadas pueden conocer sus opciones de formación de una manera sencilla, organizada e interactiva.
+          </p>
+          <div class="instituto-grid">
+            <div class="instituto-item">
+              <span class="icon">ℹ️</span>
+              <h3>Informar</h3>
+              <p>Accede a datos claros y actualizados sobre cada técnica.</p>
+            </div>
+            <div class="instituto-item">
+              <span class="icon">🧭</span>
+              <h3>Orientar</h3>
+              <p>Encuentra pistas sobre qué camino formativo puede ser el tuyo.</p>
+            </div>
+            <div class="instituto-item">
+              <span class="icon">📂</span>
+              <h3>Facilitar</h3>
+              <p>Organizamos la información para que la explores sin complicaciones.</p>
+            </div>
+            <div class="instituto-item">
+              <span class="icon">🔍</span>
+              <h3>Explorar</h3>
+              <p>Descubre opciones y amplía tu visión sobre la formación técnica.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN TÉCNICAS -->
+    <section id="tecnicas" class="section">
+      <div class="container">
+        <h2 class="section-title">TÉCNICAS</h2>
+        <div class="cards-grid" id="cardsGrid">
+          <!-- Tarjeta 1 -->
+          <div class="card">
+            <img src="https://placehold.co/300x200/7c2d12/ffffff?text=Técnica+1" alt="Técnica 1" />
+            <h3>Técnica en Sistemas</h3>
+            <p class="card-desc">Formación en desarrollo de software, bases de datos y redes.</p>
+            <button class="btn btn-secondary" data-target="detalle1">CONOCER MÁS</button>
+            <div class="card-detail" id="detalle1">
+              <p><strong>¿De qué trata?</strong><br />[Información por agregar]</p>
+              <p><strong>¿Qué se aprende?</strong><br />[Información por agregar]</p>
+              <p><strong>¿Qué habilidades se desarrollan?</strong><br />[Información por agregar]</p>
+            </div>
+          </div>
+          <!-- Tarjeta 2 -->
+          <div class="card">
+            <img src="https://placehold.co/300x200/7c2d12/ffffff?text=Técnica+2" alt="Técnica 2" />
+            <h3>Técnica en Electrónica</h3>
+            <p class="card-desc">Circuitos, microcontroladores y mantenimiento de equipos.</p>
+            <button class="btn btn-secondary" data-target="detalle2">CONOCER MÁS</button>
+            <div class="card-detail" id="detalle2">
+              <p><strong>¿De qué trata?</strong><br />[Información por agregar]</p>
+              <p><strong>¿Qué se aprende?</strong><br />[Información por agregar]</p>
+              <p><strong>¿Qué habilidades se desarrollan?</strong><br />[Información por agregar]</p>
+            </div>
+          </div>
+          <!-- Tarjeta 3 -->
+          <div class="card">
+            <img src="https://placehold.co/300x200/7c2d12/ffffff?text=Técnica+3" alt="Técnica 3" />
+            <h3>Técnica en Diseño Gráfico</h3>
+            <p class="card-desc">Comunicación visual, herramientas digitales y creatividad.</p>
+            <button class="btn btn-secondary" data-target="detalle3">CONOCER MÁS</button>
+            <div class="card-detail" id="detalle3">
+              <p><strong>¿De qué trata?</strong><br />[Información por agregar]</p>
+              <p><strong>¿Qué se aprende?</strong><br />[Información por agregar]</p>
+              <p><strong>¿Qué habilidades se desarrollan?</strong><br />[Información por agregar]</p>
+            </div>
+          </div>
+          <!-- Tarjeta 4 (placeholder) -->
+          <div class="card">
+            <img src="https://placehold.co/300x200/7c2d12/ffffff?text=Técnica+4" alt="Técnica 4" />
+            <h3>[Nombre de técnica por definir]</h3>
+            <p class="card-desc">[Descripción corta por agregar]</p>
+            <button class="btn btn-secondary" data-target="detalle4">CONOCER MÁS</button>
+            <div class="card-detail" id="detalle4">
+              <p><strong>¿De qué trata?</strong><br />[Información por agregar]</p>
+              <p><strong>¿Qué se aprende?</strong><br />[Información por agregar]</p>
+              <p><strong>¿Qué habilidades se desarrollan?</strong><br />[Información por agregar]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN CUESTIONARIO (Descubre tus intereses) -->
+    <section id="cuestionario" class="section">
+      <div class="container">
+        <h2 class="section-title">¿QUÉ ÁREA SE RELACIONA MÁS CON TUS INTERESES?</h2>
+        <p class="cuestionario-intro">
+          Responde estas preguntas según tus gustos e intereses. Al finalizar recibirás una orientación
+          relacionada con las áreas que más coincidan con tus respuestas.
+        </p>
+        <form id="quizForm" class="quiz-form">
+          <!-- Pregunta 1 -->
+          <div class="question">
+            <p><strong>Pregunta 1:</strong> ¿Qué actividad te interesa más?</p>
+            <label><input type="radio" name="q1" value="tecnologia" /> Tecnología</label>
+            <label><input type="radio" name="q1" value="practico" /> Trabajo práctico</label>
+            <label><input type="radio" name="q1" value="creatividad" /> Creatividad</label>
+            <label><input type="radio" name="q1" value="organizacion" /> Organización</label>
+            <label><input type="radio" name="q1" value="investigacion" /> Investigación</label>
+          </div>
+          <!-- Pregunta 2 -->
+          <div class="question">
+            <p><strong>Pregunta 2:</strong> ¿Qué tipo de actividad disfrutarías más?</p>
+            <label><input type="radio" name="q2" value="tecnologia" /> Trabajar con computadores.</label>
+            <label><input type="radio" name="q2" value="practico" /> Realizar actividades prácticas.</label>
+            <label><input type="radio" name="q2" value="creatividad" /> Crear y diseñar.</label>
+            <label><input type="radio" name="q2" value="organizacion" /> Organizar información.</label>
+            <label><input type="radio" name="q2" value="investigacion" /> Investigar y analizar.</label>
+          </div>
+          <!-- Pregunta 3 -->
+          <div class="question">
+            <p><strong>Pregunta 3:</strong> ¿Qué habilidad te gustaría desarrollar?</p>
+            <label><input type="radio" name="q3" value="tecnologia" /> Manejo de tecnología.</label>
+            <label><input type="radio" name="q3" value="practico" /> Habilidades prácticas.</label>
+            <label><input type="radio" name="q3" value="creatividad" /> Creatividad.</label>
+            <label><input type="radio" name="q3" value="organizacion" /> Organización.</label>
+            <label><input type="radio" name="q3" value="investigacion" /> Análisis.</label>
+          </div>
+          <button type="submit" class="btn btn-primary">VER RESULTADO</button>
+        </form>
+
+        <!-- Resultado del cuestionario -->
+        <div id="quizResult" class="quiz-result hidden">
+          <h3 id="resultArea">TU ÁREA DE MAYOR INTERÉS ES: <span id="resultLabel"></span></h3>
+          <p id="resultText"></p>
+          <p class="disclaimer">
+            Este resultado es únicamente orientativo y no determina qué técnica debes elegir.
+            Para conocer información oficial sobre las técnicas, requisitos y procesos de inscripción,
+            consulta directamente al Instituto.
+          </p>
+          <div class="result-buttons">
+            <button id="retryQuiz" class="btn btn-secondary">REPETIR CUESTIONARIO</button>
+            <a href="#tecnicas" class="btn btn-primary">VER TÉCNICAS</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN PLAN DE MEJORAMIENTO -->
+    <section id="mejoramiento" class="section">
+      <div class="container">
+        <h2 class="section-title">PLAN DE MEJORAMIENTO — 4 SEMANAS</h2>
+        <div class="timeline">
+          <!-- Semana 1 -->
+          <div class="timeline-item">
+            <span class="timeline-week">Semana 1</span>
+            <h3>INVESTIGACIÓN Y ORGANIZACIÓN</h3>
+            <p><strong>Objetivo:</strong> Reunir, revisar y organizar correctamente la información del Instituto y sus técnicas.</p>
+            <ul>
+              <li>Revisar la información disponible.</li>
+              <li>Identificar las técnicas.</li>
+              <li>Organizar la información de cada técnica.</li>
+              <li>Verificar que los datos sean claros.</li>
+              <li>Identificar qué información hace falta.</li>
+              <li>Revisar las fuentes utilizadas.</li>
+            </ul>
+            <p><em>Resultado esperado:</em> “Contar con información organizada y confiable para comenzar el desarrollo de la página.”</p>
+          </div>
+          <!-- Semana 2 -->
+          <div class="timeline-item">
+            <span class="timeline-week">Semana 2</span>
+            <h3>DISEÑO Y ESTRUCTURA</h3>
+            <p><strong>Objetivo:</strong> Diseñar la estructura visual de la página.</p>
+            <ul>
+              <li>Crear la estructura HTML.</li>
+              <li>Diseñar el menú.</li>
+              <li>Crear la sección de inicio.</li>
+              <li>Crear las tarjetas de las técnicas.</li>
+              <li>Organizar las secciones.</li>
+              <li>Seleccionar imágenes autorizadas.</li>
+              <li>Diseñar la apariencia utilizando CSS.</li>
+            </ul>
+            <p><em>Resultado esperado:</em> “Tener una primera versión visual y organizada de la página web.”</p>
+          </div>
+          <!-- Semana 3 -->
+          <div class="timeline-item">
+            <span class="timeline-week">Semana 3</span>
+            <h3>PROGRAMACIÓN E INTERACTIVIDAD</h3>
+            <p><strong>Objetivo:</strong> Agregar las funciones interactivas mediante JavaScript.</p>
+            <ul>
+              <li>Programar los botones.</li>
+              <li>Crear la función “Conocer más”.</li>
+              <li>Programar el cuestionario.</li>
+              <li>Procesar las respuestas.</li>
+              <li>Mostrar los resultados.</li>
+              <li>Agregar animaciones sencillas.</li>
+              <li>Comprobar que la navegación funcione correctamente.</li>
+            </ul>
+            <p><em>Resultado esperado:</em> “Contar con una página funcional e interactiva.”</p>
+          </div>
+          <!-- Semana 4 -->
+          <div class="timeline-item">
+            <span class="timeline-week">Semana 4</span>
+            <h3>PRUEBAS Y MEJORAMIENTO</h3>
+            <p><strong>Objetivo:</strong> Revisar y mejorar el proyecto antes de presentarlo.</p>
+            <ul>
+              <li>Probar todos los botones.</li>
+              <li>Revisar los textos.</li>
+              <li>Corregir errores.</li>
+              <li>Comprobar el cuestionario.</li>
+              <li>Revisar que las imágenes funcionen.</li>
+              <li>Comprobar la página en computador y celular.</li>
+              <li>Mejorar el diseño.</li>
+              <li>Revisar la información de contacto.</li>
+              <li>Realizar una evaluación final del proyecto.</li>
+            </ul>
+            <p><em>Resultado esperado:</em> “Obtener una página web funcional, clara, organizada y lista para ser presentada.”</p>
+          </div>
+        </div>
+
+        <!-- Barra de progreso -->
+        <div class="progress-section">
+          <h3>PROGRESO DEL PROYECTO</h3>
+          <div class="progress-steps">
+            <span class="step completed">Semana 1 ✅</span>
+            <span class="step active" id="step2">Semana 2 ⏳</span>
+            <span class="step" id="step3">Semana 3 ⏳</span>
+            <span class="step" id="step4">Semana 4 ⏳</span>
+          </div>
+          <div class="progress-bar-container">
+            <div class="progress-bar" id="progressBar" style="width: 25%;">25%</div>
+          </div>
+          <div class="progress-controls">
+            <button id="advanceProgress" class="btn btn-secondary">Avanzar semana</button>
+            <button id="resetProgress" class="btn btn-secondary">Reiniciar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="section">
+      <div class="container">
+        <h2 class="section-title">CONTACTO</h2>
+        <div class="contact-info">
+          <p><strong>Nombre del Instituto:</strong> Instituto Técnico León Ángel Gómez</p>
+          <p><strong>Dirección:</strong> [Información oficial de contacto por agregar]</p>
+          <p><strong>Teléfono:</strong> [Información oficial de contacto por agregar]</p>
+          <p><strong>Correo electrónico:</strong> [Información oficial de contacto por agregar]</p>
+          <p><strong>Página web / Redes:</strong> [Información oficial de contacto por agregar]</p>
+          <a href="#" class="btn btn-primary">CONSULTAR INFORMACIÓN OFICIAL</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN FUENTES CONSULTADAS (Cibergrafía) -->
+    <section id="fuentes" class="section">
+      <div class="container">
+        <h2 class="section-title">FUENTES CONSULTADAS</h2>
+        <ul class="fuentes-list">
+          <li>
+            <strong>Ministerio de Educación Nacional de Colombia</strong><br />
+            Sistema Educativo de Colombia.<br />
+            Tema: Educación técnica profesional y tecnológica.<br />
+            Fecha de consulta: 30 de agosto de 2026.
+          </li>
+          <li>
+            <strong>SENA</strong><br />
+            Orientación vocacional y ocupacional.<br />
+            Tema: Orientación para la elección de programas de formación.<br />
+            Fecha de consulta: 30 de agosto de 2026.
+          </li>
+          <li>
+            <strong>SENA</strong><br />
+            “El SENA ayuda a los jóvenes y colombianos en general a encontrar su verdadera vocación”.<br />
+            Tema: Importancia de los intereses y preferencias para la orientación vocacional.<br />
+            Fecha de consulta: 30 de agosto de 2026.
+          </li>
+          <li>
+            <strong>SENA</strong><br />
+            “Inicia tu formación con el SENA”.<br />
+            Tema: Formación técnica, tecnológica y competencias laborales.<br />
+            Fecha de consulta: 30 de agosto de 2026.
+          </li>
+          <li>
+            <strong>SENA</strong><br />
+            “Guía de articulación del SENA con la educación media”.<br />
+            Tema: Relación entre formación técnica y orientación vocacional.<br />
+            Fecha de consulta: 30 de agosto de 2026.
+          </li>
+        </ul>
+        <p class="fuentes-nota">Los enlaces a las fuentes se pueden agregar cuando se conozcan las URLs oficiales.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Instituto Técnico León Ángel Gómez — Proyecto estudiantil</p>
+      <button id="backToTop" class="btn btn-secondary">⬆ Volver al inicio</button>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
