@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add("js");</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — Instituto Técnico León Ángel Gómez</title>
+<link rel="icon" href="logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-interna">
+    <a href="index.html" class="nav-marca">
+      <img src="logo.png" alt="Escudo del Instituto Técnico León Ángel Gómez">
+      <span class="nav-marca-texto"><strong>ITLAG</strong><span>León Ángel Gómez</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="conocenos.html">Conócenos</a>
+      <a href="tecnicas.html">Técnicas</a>
+      <a href="intereses.html">Descubre tus intereses</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <a href="tecnicas.html" class="boton boton-primario nav-cta">Explorar</a>
+    <button class="nav-hamb" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-movil">
+    <a href="index.html">Inicio</a>
+    <a href="conocenos.html">Conócenos</a>
+    <a href="tecnicas.html">Técnicas</a>
+    <a href="intereses.html">Descubre tus intereses</a>
+    <a href="contacto.html">Contacto</a>
+  </div>
+</header>
+
+<main>
+  <section class="encabezado-pagina">
+    <div class="contenedor">
+      <h1>¿Quieres conocer más?</h1>
+      <p class="subtitulo">Si necesitas información sobre las técnicas, requisitos o procesos de inscripción, consulta directamente los canales oficiales del Instituto.</p>
+    </div>
+  </section>
+
+  <section class="franja--sm revelar">
+    <div class="contenedor">
+      <div class="contacto-grid">
+
+        <div>
+          <div class="contacto-info-item">
+            <span class="icono">📍</span>
+            <div>
+              <h3>Dirección</h3>
+              <p>Por definir</p>
+            </div>
+          </div>
+          <div class="contacto-info-item">
+            <span class="icono">📞</span>
+            <div>
+              <h3>Teléfono</h3>
+              <p>Por definir</p>
+            </div>
+          </div>
+          <div class="contacto-info-item">
+            <span class="icono">✉</span>
+            <div>
+              <h3>Correo</h3>
+              <p>Por definir</p>
+            </div>
+          </div>
+          <div class="contacto-info-item">
+            <span class="icono">🌐</span>
+            <div>
+              <h3>Redes sociales</h3>
+              <p>Por definir</p>
+            </div>
+          </div>
+
+          <div class="apoyo">
+            <div>
+              <h3>¿Quieres apoyar al Instituto?</h3>
+              <p>Estamos preparando este espacio para que puedas colaborar con nosotros.</p>
+            </div>
+            <button type="button" class="boton boton-secundario" id="boton-apoyo">Apoyar</button>
+          </div>
+        </div>
+
+        <form class="formulario" id="form-contacto">
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
+          </div>
+          <div class="campo">
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo" required placeholder="tucorreo@ejemplo.com">
+          </div>
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" required placeholder="Cuéntanos qué te gustaría saber"></textarea>
+          </div>
+          <button type="submit" class="boton boton-primario">Enviar mensaje</button>
+          <div class="mensaje-confirmacion" id="confirmacion-contacto">✓ Tu mensaje quedó registrado. Este formulario es una demostración visual.</div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie-top">
+      <div class="pie-marca">
+        <img src="logo.png" alt="Escudo del Instituto">
+        <div>
+          <strong>INSTITUTO TÉCNICO LEÓN ÁNGEL GÓMEZ</strong>
+          <small>Excelencia en el ser y amor en el quehacer</small>
+        </div>
+      </div>
+      <div class="pie-links">
+        <div class="pie-col">
+          <h4>Navegación</h4>
+          <a href="index.html">Inicio</a>
+          <a href="conocenos.html">Conócenos</a>
+          <a href="tecnicas.html">Técnicas</a>
+        </div>
+        <div class="pie-col">
+          <h4>Descubre</h4>
+          <a href="intereses.html">Descubre tus intereses</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      </div>
+    </div>
+    <p class="pie-bottom">Proyecto estudiantil — Instituto Técnico León Ángel Gómez.</p>
+  </div>
+</footer>
+
+<div class="modal-fondo" id="modal-apoyo">
+  <div class="modal">
+    <h3>Muy pronto</h3>
+    <p>Este espacio se habilitará cuando el Instituto defina sus canales oficiales de apoyo y donación.</p>
+    <button type="button" class="boton boton-primario" id="cerrar-apoyo">Entendido</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

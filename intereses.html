@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add("js");</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Descubre tus intereses — Instituto Técnico León Ángel Gómez</title>
+<link rel="icon" href="logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-interna">
+    <a href="index.html" class="nav-marca">
+      <img src="logo.png" alt="Escudo del Instituto Técnico León Ángel Gómez">
+      <span class="nav-marca-texto"><strong>ITLAG</strong><span>León Ángel Gómez</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="conocenos.html">Conócenos</a>
+      <a href="tecnicas.html">Técnicas</a>
+      <a href="intereses.html">Descubre tus intereses</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <a href="contacto.html" class="boton boton-primario nav-cta">Contáctanos</a>
+    <button class="nav-hamb" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-movil">
+    <a href="index.html">Inicio</a>
+    <a href="conocenos.html">Conócenos</a>
+    <a href="tecnicas.html">Técnicas</a>
+    <a href="intereses.html">Descubre tus intereses</a>
+    <a href="contacto.html">Contacto</a>
+  </div>
+</header>
+
+<main>
+  <section class="encabezado-pagina">
+    <div class="contenedor">
+      <h1>¿Qué técnica conecta contigo?</h1>
+      <p class="subtitulo">No hay respuestas correctas. Solo queremos conocer un poco más sobre tus intereses.</p>
+    </div>
+  </section>
+
+  <section class="franja--sm" id="quiz">
+    <div class="contenedor quiz-envoltorio">
+
+      <div id="quiz-preguntas">
+        <div class="barra-progreso"><div class="barra-progreso-relleno" id="barra-relleno"></div></div>
+        <span class="progreso-texto" id="progreso-texto">Pregunta 1 de 3</span>
+        <div class="tarjeta-pregunta" id="tarjeta-pregunta"></div>
+      </div>
+
+      <div class="quiz-resultado" id="quiz-resultado">
+        <span class="etiqueta">Tu resultado</span>
+        <h2>Parece que tus intereses se acercan a…</h2>
+        <p class="nombre-tecnica" id="resultado-nombre"></p>
+        <p class="desc" id="resultado-desc"></p>
+        <div class="quiz-resultado-acciones">
+          <a href="tecnicas.html" id="resultado-enlace" class="boton boton-primario">Explorar esta técnica →</a>
+          <button id="reintentar-quiz" type="button">Volver a intentar</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie-top">
+      <div class="pie-marca">
+        <img src="logo.png" alt="Escudo del Instituto">
+        <div>
+          <strong>INSTITUTO TÉCNICO LEÓN ÁNGEL GÓMEZ</strong>
+          <small>Excelencia en el ser y amor en el quehacer</small>
+        </div>
+      </div>
+      <div class="pie-links">
+        <div class="pie-col">
+          <h4>Navegación</h4>
+          <a href="index.html">Inicio</a>
+          <a href="conocenos.html">Conócenos</a>
+          <a href="tecnicas.html">Técnicas</a>
+        </div>
+        <div class="pie-col">
+          <h4>Descubre</h4>
+          <a href="intereses.html">Descubre tus intereses</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+      </div>
+    </div>
+    <p class="pie-bottom">Proyecto estudiantil — Instituto Técnico León Ángel Gómez.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
